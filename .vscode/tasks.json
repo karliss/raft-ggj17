@@ -1,0 +1,206 @@
+{
+    "version": "0.1.0",
+    "command": "haxelib",
+    "args": ["run", "lime"],
+    "tasks": [
+        {
+            "taskName": "html5 release",
+            "suppressTaskName": true,
+            "args": ["test", "html5"],
+            "problemMatcher": {
+                "owner": "haxe",
+                "pattern": {
+                    "regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "endLine": 3,
+                    "column": 4,
+                    "endColumn": 5,
+                    "severity": 6,
+                    "message": 7
+                }
+            }
+        },
+        {
+            "taskName": "html5 debug",
+            "suppressTaskName": true,
+            "args": ["test", "html5", "-Ddebug", "-Dsource-map-content", "-debug"],
+            "problemMatcher": {
+                "owner": "haxe",
+                "pattern": {
+                    "regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "endLine": 3,
+                    "column": 4,
+                    "endColumn": 5,
+                    "severity": 6,
+                    "message": 7
+                }
+            }
+        },
+        {
+            "taskName": "html5 build",
+            "isBuildCommand": true,
+            "suppressTaskName": true,
+            "args": ["build", "html5", "-Ddebug", "-Dsource-map-content", "-debug"],
+            "problemMatcher": {
+                "owner": "haxe",
+                "pattern": {
+                    "regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "endLine": 3,
+                    "column": 4,
+                    "endColumn": 5,
+                    "severity": 6,
+                    "message": 7
+                }
+            }
+        },
+        {
+            "taskName": "cpp release",
+            "suppressTaskName": true,
+            "args": ["test", "cpp"],
+            "problemMatcher": {
+                "owner": "haxe",
+                "pattern": {
+                    "regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "endLine": 3,
+                    "column": 4,
+                    "endColumn": 5,
+                    "severity": 6,
+                    "message": 7
+                }
+            }
+        },
+        {
+            "taskName": "cpp debug",
+            "suppressTaskName": true,
+            "args": ["test", "cpp", "-Ddebug"],
+            "problemMatcher": {
+                "owner": "haxe",
+                "pattern": {
+                    "regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "endLine": 3,
+                    "column": 4,
+                    "endColumn": 5,
+                    "severity": 6,
+                    "message": 7
+                }
+            }
+        },
+        {
+            "taskName": "cpp release -Dnext",
+            "suppressTaskName": true,
+            "args": ["test", "cpp", "-Dnext"],
+            "problemMatcher": {
+                "owner": "haxe",
+                "pattern": {
+                    "regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "endLine": 3,
+                    "column": 4,
+                    "endColumn": 5,
+                    "severity": 6,
+                    "message": 7
+                }
+            }
+        },
+        {
+            "taskName": "cpp debug -Dnext",
+            "suppressTaskName": true,
+            "args": ["test", "cpp", "-Dnext", "-Ddebug"],
+            "problemMatcher": {
+                "owner": "haxe",
+                "pattern": {
+                    "regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "endLine": 3,
+                    "column": 4,
+                    "endColumn": 5,
+                    "severity": 6,
+                    "message": 7
+                }
+            }
+        },
+        {
+            "taskName": "android debug",
+            "suppressTaskName": true,
+            "args": ["build", "android", "-Ddebug"],
+            "problemMatcher": {
+                "owner": "haxe",
+                "pattern": {
+                    "regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "endLine": 3,
+                    "column": 4,
+                    "endColumn": 5,
+                    "severity": 6,
+                    "message": 7
+                }
+            }
+        },
+        {
+            "taskName": "android release",
+            "suppressTaskName": true,
+            "args": ["build", "android"],
+            "problemMatcher": {
+                "owner": "haxe",
+                "pattern": {
+                    "regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "endLine": 3,
+                    "column": 4,
+                    "endColumn": 5,
+                    "severity": 6,
+                    "message": 7
+                }
+            }
+        },
+        {
+            "taskName": "android debug -Dnext",
+            "suppressTaskName": true,
+            "args": ["build", "android", "-Ddebug", "-Dnext"],
+            "problemMatcher": {
+                "owner": "haxe",
+                "pattern": {
+                    "regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "endLine": 3,
+                    "column": 4,
+                    "endColumn": 5,
+                    "severity": 6,
+                    "message": 7
+                }
+            }
+        },
+        {
+            "taskName": "android release -Dnext",
+            "suppressTaskName": true,
+            "args": ["build", "android", "-Dnext"],
+            "problemMatcher": {
+                "owner": "haxe",
+                "pattern": {
+                    "regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "endLine": 3,
+                    "column": 4,
+                    "endColumn": 5,
+                    "severity": 6,
+                    "message": 7
+                }
+            }
+        }
+    ]
+}

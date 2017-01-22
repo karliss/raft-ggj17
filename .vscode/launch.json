@@ -1,0 +1,16 @@
+{
+    "version": "0.1.0",
+    "configurations": [
+        {
+            "name": "html5",
+            "type": "chrome",
+            "runtimeExecutable": "google-chrome-stable",
+            "request": "launch",
+            "port": 9222,
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceRoot}/export/html5",
+            "sourceMaps": true,
+            "preLaunchTask": "html5 build"
+        }
+    ]
+}
