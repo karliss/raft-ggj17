@@ -1,0 +1,22 @@
+{
+    "image" : "assets/images/health.png",
+    "width" : 32,
+    "height": 32,
+    "animation" : {
+        "idle" : {
+            "speed" : 3,
+            "looped" : "false",
+            "f" : [0]
+        },
+        "beep" : {
+            "speed" : 4,
+            "looped" : "false",
+            "f" : [0, 1, 2]
+        },
+        "pulse" : {
+            "speed" : 4,
+            "looped" : "true",
+            "f" : [0, 1, 2]
+        }      
+    }
+}
